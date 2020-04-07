@@ -23,7 +23,6 @@ jdk:
 jobs:
   include:
   - os: linux
-  - os: linux
     arch: s390x
     
   
@@ -32,4 +31,4 @@ before_install:
 install:
   - # Skip mvn install. See https://docs.travis-ci.com/user/languages/java/
 script:
-  - MAVEN_OPTS="-Xms512m -Xmx1024m" ./mvnw clean install -DskipTests -B -fae
+  - MAVEN_OPTS="-Xms512m -Xmx1024m" ./mvnw clean install -DskipTests -Dverbose=true -B -fae
