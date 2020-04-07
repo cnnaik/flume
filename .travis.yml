@@ -17,6 +17,7 @@
 
 dist: trusty
 language: java
+cache: bundler
 jdk:
   - oraclejdk8
   
